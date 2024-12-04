@@ -6,17 +6,17 @@ is_example = False
 part = 2
 
 def parse_input(file_path):
-	instructions = []
+	data = []
 	with open(file_path) as file:
 		while line := file.readline():
-			# Get all numbers from line and put in lists
+			# Get all matches from line and put in input list
 			if part == 1:
 				matches = re.findall(r'(?:mul\(\d{1,3},\d{1,3}\))', line)
 			else:
 				matches = re.findall(r'(?:mul\(\d{1,3},\d{1,3}\)|do\(\)|don\'t\(\))', line)
-			instructions += matches
+			data += matches
 	
-	return instructions
+	return data
 
 
 # Selecting which input to use

@@ -9,7 +9,7 @@ def parse_input(file_path):
 	data = []
 	with open(file_path) as file:
 		while line := file.readline():
-			# Get all numbers from line and put in lists
+			# Get all numbers from line and put in input list
 			numbers = re.findall(r'\d+', line)
 			data.append(list(map(int, numbers)))
 
