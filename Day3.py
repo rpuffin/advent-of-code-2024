@@ -26,7 +26,7 @@ else:
 	instructions = parse_input(input_filepath)
 
 if part == 1:
-	# Part 1
+	# Part 1: Do all correct muliplication instructions mul() and sum them
 	total_sum = 0
 	for instruction in instructions:
 		matches = re.findall(r'\d+', instruction)
@@ -34,7 +34,7 @@ if part == 1:
 
 	print(total_sum)
 else:
-	# Part 2
+	# Part 2: Do all correct muliplication instructions mul() and sum them, taking into account do() and don't() instructions
 	total_sum = 0
 	enabled = True
 	for instruction in instructions:

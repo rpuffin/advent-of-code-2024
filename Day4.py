@@ -32,7 +32,7 @@ else:
 	data = parse_input(input_filepath)
 
 if part == 1:
-	# Part 1
+	# Part 1: Count occurances of XMAS in all directions 
 	# Create lists for rows, columns, both diagonals
 	max_col = len(data[0])
 	max_row = len(data)
@@ -57,7 +57,7 @@ if part == 1:
 
 	print(word_count)
 else:
-	# Part 2
+	# Part 2: Count occurances of MAS shaped like an X
 	a_coordinates = []
 
 	# Get all coordinates for the letter A
