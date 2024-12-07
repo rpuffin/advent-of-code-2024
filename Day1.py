@@ -25,20 +25,18 @@ else:
 	lists = parse_input(input_filepath)
 
 if part == 1:
-	# Part 1
+	# Part 1: Calculate total distance between pairs
 	# Sort lists
 	lists[0].sort()
 	lists[1].sort()
 
-	# Calculate total distance between pairs of list elements
 	location_sum = 0
 	for idx, location in enumerate(lists[0]):
 		location_sum += abs(location - lists[1][idx])
 
 	print(location_sum)
 else:
-	# Part 2
-	# Number of occurances multiplied by the value
+	# Part 2: Calculate similiarity between pair lists, multipying each element in the left list with numbers of occurances in the right list
 	similarity_score = 0
 	for location in lists[0]:
 		similarity_score += location * lists[1].count(location)

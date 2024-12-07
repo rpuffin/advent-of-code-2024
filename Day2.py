@@ -76,7 +76,7 @@ else:
 	reports = parse_input(input_filepath)
 
 if part == 1:
-	# Part 1
+	# Part 1: Count all safe reports
 	num_safe_reports = 0
 	for report in reports:
 		if len(check_levels(report)) == 0:
@@ -84,7 +84,7 @@ if part == 1:
 	
 	print(num_safe_reports)
 else:
-	# Part 2
+	# Part 2: Count all safe reports, allowing for one bad level in each report
 	num_safe_reports = 0
 	for report in reports:
 		unsafe_level_removed = False
