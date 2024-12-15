@@ -1,7 +1,7 @@
 import regex
 
-example_filepath = 'inputs/day4_example.txt'
-input_filepath = 'inputs/day4_input.txt'
+example_filepath = 'other/inputs/day4_example.txt'
+input_filepath = 'other/inputs/day4_input.txt'
 is_example = False
 part = 2
 

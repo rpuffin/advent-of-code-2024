@@ -1,7 +1,7 @@
 import re
 
-example_filepath = 'inputs/day3_example.txt'
-input_filepath = 'inputs/day3_input.txt'
+example_filepath = 'other/inputs/day3_example.txt'
+input_filepath = 'other/inputs/day3_input.txt'
 is_example = False
 part = 2
 
