@@ -1,4 +1,6 @@
 # 2024 Advent of Code with Python
+Second year using Python for Advent of Code.
+
 ## Day 6, part 2
 Real speedbump in the road here. Example input worked, but not the real input. Made a visualization in js to try to debug it. Took a while, but figured out the following problems with the code:
 - Not recording all directions when guard is turning.
